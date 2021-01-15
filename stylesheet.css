@@ -129,3 +129,9 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+.image-cropper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
