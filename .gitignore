@@ -1,0 +1,8 @@
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Image Editor
+edit-images.ipynb
+
+# Input Images
+input/
