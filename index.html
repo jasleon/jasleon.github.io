@@ -50,6 +50,23 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
+            <tr onmouseout="bs_stop()" onmouseover="bs_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='bs_image'><img src='images/resized.png'></div>
+                <img src='images/resized.png'>
+              </div>
+              <script type="text/javascript">
+                function bs_start() {
+                  document.getElementById('bs_image').style.opacity = "1";
+                }
+
+                function bs_stop() {
+                  document.getElementById('bs_image').style.opacity = "0";
+                }
+                bs_stop()
+              </script>
+            </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="https://github.com/jasleon/Visual-Odometry">
                 <papertitle>Visual Odometry for Localization in Autonomous Driving</papertitle>
