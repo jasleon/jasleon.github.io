@@ -49,7 +49,7 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
-            <tr onmouseout="bs_stop()" onmouseover="bs_start()">
+          <tr onmouseout="bs_stop()" onmouseover="bs_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='bs_image'><img src='images/van_after.png'></div>
@@ -80,6 +80,36 @@
             </td>
           </tr> 
 
+          <tr onmouseout="dt_stop()" onmouseover="dt_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='dt_image'><img src='images/kalman.jpg'></div>
+                <img src='images/kalman.jpg'>
+              </div>
+              <script type="text/javascript">
+                function dt_start() {
+                  document.getElementById('dt_image').style.opacity = "1";
+                }
+
+                function dt_stop() {
+                  document.getElementById('dt_image').style.opacity = "0";
+                }
+                dt_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://github.com/jasleon/Vehicle-State-Estimation">
+                <papertitle>Vehicle State Estimation on a Roadway</papertitle>
+              </a>
+              <br>
+              <i>State Estimation and Localization for Self-Driving Cars</i>
+              <br>
+              Jul. 24, 2020  
+              <p></p>
+              <p>Combine IMU, GNSS, and LIDAR measurements to estimate the localization of a vehicle.
+              </p>
+            </td>
+          </tr>
 
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
