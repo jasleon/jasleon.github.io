@@ -49,6 +49,39 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
+          <tr onmouseout="as_stop()" onmouseover="as_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='as_image'><img src='images/sign_after.png'></div>
+                <img src='images/sign.png'>
+              </div>
+              <script type="text/javascript">
+                function as_start() {
+                  document.getElementById('as_image').style.opacity = "1";
+                }
+
+                function as_stop() {
+                  document.getElementById('as_image').style.opacity = "0";
+                }
+                as_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://github.com/jasleon/Traffic-Sign-Classifier">
+                <papertitle>Traffic Sign Classifier</papertitle>
+              </a>
+              <br>
+              <a href="https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd013">
+                <i>Self-Driving Car Engineer Nanodegree Program</i>
+              </a>
+              <br>
+              Jan. 24, 2021  
+              <p></p>
+              <p>Train a convolutional neural network so it can classify traffic signs using the <a href='http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset'>German Traffic Sign Dataset</a>.
+              </p>
+            </td>
+          </tr> 
+          
           <tr onmouseout="bs_stop()" onmouseover="bs_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -71,7 +104,9 @@
                 <papertitle>Visual Odometry for Localization in Autonomous Driving</papertitle>
               </a>
               <br>
-              <i>Visual Perception for Self-Driving Cars</i>
+              <a href="https://www.coursera.org/learn/visual-perception-self-driving-cars?">
+                <i>Visual Perception for Self-Driving Cars</i>
+              </a>
               <br>
               Aug. 17, 2020  
               <p></p>
@@ -89,7 +124,9 @@
                 <papertitle>Vehicle State Estimation on a Roadway</papertitle>
               </a>
               <br>
-              <i>State Estimation and Localization for Self-Driving Cars</i>
+              <a href="https://www.coursera.org/learn/state-estimation-localization-self-driving-cars?">
+                <i>State Estimation and Localization for Self-Driving Cars</i>
+              </a>
               <br>
               Jul. 24, 2020  
               <p></p>
