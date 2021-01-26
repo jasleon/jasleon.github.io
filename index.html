@@ -53,7 +53,7 @@
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='as_image'><img src='images/sign_after.png'></div>
-                <img src='images/sign.png'>
+                <img src='images/sign_before.png'>
               </div>
               <script type="text/javascript">
                 function as_start() {
@@ -134,6 +134,37 @@
               </p>
             </td>
           </tr>
+
+          <tr onmouseout="cs_stop()" onmouseover="cs_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='cs_image'><img src='images/pid_after.gif'></div>
+                <img src='images/pid_before.png'>
+              </div>
+              <script type="text/javascript">
+                function cs_start() {
+                  document.getElementById('cs_image').style.opacity = "1";
+                }
+
+                function cs_stop() {
+                  document.getElementById('cs_image').style.opacity = "0";
+                }
+                cs_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>Self-Driving Vehicle Control</papertitle>
+              <br>
+              <a href="https://www.coursera.org/learn/intro-self-driving-cars?">
+                <i>Introduction to Self-Driving Cars</i>
+              </a>
+              <br>
+              Jun. 28, 2020  
+              <p></p>
+              <p>You can control the vehicle's pedal and steering wheel to reach a desired speed and heading angle.
+              </p>
+            </td>
+          </tr> 
 
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
