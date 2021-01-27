@@ -81,6 +81,37 @@
             </td>
           </tr> 
           
+          <tr onmouseout="ds_stop()" onmouseover="ds_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ds_image'><img src='images/plan_after.gif'></div>
+                <img src='images/plan_before.png'>
+              </div>
+              <script type="text/javascript">
+                function ds_start() {
+                  document.getElementById('ds_image').style.opacity = "1";
+                }
+
+                function ds_stop() {
+                  document.getElementById('ds_image').style.opacity = "0";
+                }
+                ds_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>Motion Planning Pipeline</papertitle>
+              <br>
+              <i>Motion Planning for Self-Driving Cars</i>
+              <br>
+              Oct. 20, 2020  
+              <br>
+              <a href="https://www.coursera.org/learn/motion-planning-self-driving-cars?">course</a>
+              <p></p>
+              <p>Develop a motion planner for an autonomous vehicle that can handle real-world scenarios.
+              </p>
+            </td>
+          </tr>
+          
           <tr onmouseout="bs_stop()" onmouseover="bs_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
