@@ -81,6 +81,40 @@
             </td>
           </tr> 
           
+          <tr onmouseout="lines_stop()" onmouseover="lines_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='lines_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/lines_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/lines_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function lines_start() {
+                  document.getElementById('lines_image').style.opacity = "1";
+                }
+                function lines_stop() {
+                  document.getElementById('lines_image').style.opacity = "0";
+                }
+                lines_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>Advanced Lane Finding</papertitle>
+              <br>
+              <i>Self-Driving Car Engineer Nanodegree Program</i>
+              <br>
+              Jan. 1, 2021  
+              <br>
+              <a href="https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd013">course</a> /
+              <a href="https://github.com/jasleon/Advanced-Lane-Finding">code</a>
+              <p></p>
+              <p>This software pipeline identifies the lane boundaries in a video from a front-facing camera on a car.
+              </p>
+            </td>
+          </tr>
+            
           <tr onmouseout="ds_stop()" onmouseover="ds_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
