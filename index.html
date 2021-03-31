@@ -49,6 +49,38 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
+          <tr onmouseout="pfilter_stop()" onmouseover="pfilter_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='pfilter_image'><img src='images/pfilter_after.gif'></div>
+                <img src='images/pfilter_before.png'>
+              </div>
+              <script type="text/javascript">
+                function pfilter_start() {
+                  document.getElementById('pfilter_image').style.opacity = "1";
+                }
+
+                function pfilter_stop() {
+                  document.getElementById('pfilter_image').style.opacity = "0";
+                }
+                pfilter_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>Kidnapped Vehicle</papertitle>
+              <br>
+              <i>Self-Driving Car Engineer Nanodegree Program</i>
+              <br>
+              Mar. 14, 2021
+              <br>
+              <a href="https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd013">course</a> /
+              <a href="https://github.com/jasleon/Kidnapped-Vehicle">code</a>
+              <p></p>
+              <p>Implement a particle filter to localize a vehicle in a map.
+              </p>
+            </td>
+          </tr>
+          
           <tr onmouseout="ekf_stop()" onmouseover="ekf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -67,7 +99,7 @@
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle>Extended Kalman Filters</papertitle>
+              <papertitle>Extended Kalman Filter</papertitle>
               <br>
               <i>Self-Driving Car Engineer Nanodegree Program</i>
               <br>
