@@ -49,6 +49,38 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
+          <tr onmouseout="ekf_stop()" onmouseover="ekf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ekf_image'><img src='images/ekf_after.gif'></div>
+                <img src='images/ekf_before.png'>
+              </div>
+              <script type="text/javascript">
+                function ekf_start() {
+                  document.getElementById('ekf_image').style.opacity = "1";
+                }
+
+                function ekf_stop() {
+                  document.getElementById('ekf_image').style.opacity = "0";
+                }
+                ekf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>Extended Kalman Filters</papertitle>
+              <br>
+              <i>Self-Driving Car Engineer Nanodegree Program</i>
+              <br>
+              Feb. 21, 2021
+              <br>
+              <a href="https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd013">course</a> /
+              <a href="https://github.com/jasleon/Extended-Kalman-Filter">code</a>
+              <p></p>
+              <p>Integrate noisy LIDAR and RADAR measurements to estimate the state of a moving object.
+              </p>
+            </td>
+          </tr>
+
           <tr onmouseout="clone_stop()" onmouseover="clone_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
